@@ -1,6 +1,6 @@
 cask "claudepet" do
-  version "1.0.0"
-  sha256 "392f8fffca79f3dd807ff0a402ec11df020b0aa3bec23e6c5f6c9ac3d7a2f5bb"
+  version "1.0.1"
+  sha256 "0ea088b19feaa06cecec0b01025c2affafa17879351787c8de547e7457791b71"
 
   url "https://github.com/Jjiggu/ClaudePet/releases/download/v#{version}/ClaudePet-#{version}.dmg"
   name "ClaudePet"
