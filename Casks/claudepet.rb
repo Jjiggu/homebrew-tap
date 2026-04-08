@@ -9,6 +9,12 @@ cask "claudepet" do
 
   app "ClaudePet.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-d", "com.apple.quarantine", "#{appdir}/ClaudePet.app"],
+      sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.hoon.ClaudePet.plist",
     "~/Library/Saved Application State/com.hoon.ClaudePet.savedState",
